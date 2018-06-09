@@ -3,7 +3,7 @@ Java code to test https proxy settings based on Java HttpURLConnection class.
 The code can actually connect to any URL, but will only respond to https.proxyUser and https.ProxyPassword system properties.
 
 ### Usage:
-$ java -jar \<java-options\> testwebpage.jar \<URL\>
+$ java \<java-options\> -jar  testwebpage.jar \<URL\>
 ```
  sherif@Turin ~ $ java -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3128 -Dhttps.proxyUser=user -Dhttps.proxyPassword=user  -Djdk.http.auth.tunneling.disabledSchemes -jar testwebpage.jar https://api.github.com
 ```
